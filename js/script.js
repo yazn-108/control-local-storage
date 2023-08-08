@@ -55,6 +55,7 @@ function deleteItem() {
         if (localStorage.getItem(keyInput.value)) {
             localStorage.removeItem(keyInput.value);
             results.innerHTML = `Local Storage Item <span>${keyInput.value}</span> deleted`;
+            keyInput.value = '';
         }else{
             results.innerHTML = `No Local Storage Item With The Name <span>${keyInput.value}</span>`;
         };
