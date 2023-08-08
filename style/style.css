@@ -52,7 +52,9 @@ body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 .parent .results span span{
     font-weight: bold;
     color: var(--main-color);}
-.parent .results > span div{text-align: left;}
+.parent .results > span div{
+    text-transform: none;
+    text-align: left;}
 .parent .results > span div span{color: var(--main-color);}
 @media (max-width: 768px) {
     .parent{margin: 0;width: 100%;}
