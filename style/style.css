@@ -1,0 +1,64 @@
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    user-select: none;}
+:root{--main-color:#009688;}
+::-webkit-scrollbar{width: 0;}
+a{text-decoration: none;}
+button{
+    text-transform: capitalize;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;}
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.parent{
+    background-color: #eee;
+    width: 70%;
+    margin:40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;}
+.parent .item-input,
+.parent .key-input{
+    outline: none;
+    border: 1px white solid;
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 100%;}
+.parent .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.parent .buttons button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;}
+.parent .results{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 2px dashed #eee;
+    font-weight: 600;}
+.parent .results span span{
+    font-weight: bold;
+    color: var(--main-color);}
+.parent .results > span div{text-align: left;}
+.parent .results > span div span{color: var(--main-color);}
+@media (max-width: 768px) {
+    .parent{margin: 0;width: 100%;}
+}
+@media (max-width: 575px) {
+    .parent .buttons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;}
+}
